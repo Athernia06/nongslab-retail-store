@@ -1,0 +1,52 @@
+export const PROMO_BANNERS = [
+  {
+    id: 'b1',
+    eyebrow: 'FRESH BREW ALERT',
+    title: 'CoffeeHour: Latte / Americano',
+    subtitle: 'Buy 1 Get 1 · every day 2–4 PM',
+    emoji: '☕️',
+    gradient: 'from-brand-700 via-brand-600 to-emerald-400',
+    accent: 'bg-white/20',
+    chip: 'bg-yellow-300 text-ink-900',
+    chipLabel: '2–4 PM',
+  },
+  {
+    id: 'b2',
+    eyebrow: 'STEAMY & WARM',
+    title: 'Oden + Bakso Cup Combo',
+    subtitle: 'Save 30% · hot from the oden station',
+    emoji: '🍢',
+    gradient: 'from-orange-600 via-amber-500 to-yellow-400',
+    accent: 'bg-white/20',
+    chip: 'bg-white text-orange-700',
+    chipLabel: '-30%',
+  },
+  {
+    id: 'b3',
+    eyebrow: 'LUNCH COMBO',
+    title: 'Bento Meal + Ice Tea',
+    subtitle: 'Complete meal deal at Rp35.000',
+    emoji: '🍱',
+    gradient: 'from-indigo-600 via-violet-500 to-fuchsia-400',
+    accent: 'bg-white/20',
+    chip: 'bg-white text-indigo-700',
+    chipLabel: 'Rp35K',
+  },
+  {
+    id: 'b4',
+    eyebrow: 'SWEET COOLDOWN',
+    title: 'Ice Cream 2nd Cup Half',
+    subtitle: 'Gelato, cone & bingsu · Cheepy Tuesday',
+    emoji: '🍦',
+    gradient: 'from-sky-500 via-cyan-400 to-teal-300',
+    accent: 'bg-white/20',
+    chip: 'bg-white text-sky-700',
+    chipLabel: '2ND -50%',
+  },
+]
+
+export const HERO_STATS = [
+  { value: '12 menit', label: 'avg. setup self-pickup' },
+  { value: '150+', label: 'ready-to-eat SKUs' },
+  { value: '4.9/5', label: 'customer rating' },
+]

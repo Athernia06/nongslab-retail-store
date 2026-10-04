@@ -1,0 +1,42 @@
+export const stores = [
+  {
+    id: 'st01',
+    name: 'FamilyStore Sudirman',
+    isOpen: true,
+    distance: '0.4 km',
+    address: 'Jl. Jend. Sudirman No. 12, Jakarta Pusat',
+    hours: '24 Hours',
+  },
+  {
+    id: 'st02',
+    name: 'FamilyStore Kemang Raya',
+    isOpen: true,
+    distance: '1.8 km',
+    address: 'Jl. Kemang Raya No. 45, Jakarta Selatan',
+    hours: '06:00 – 23:00',
+  },
+  {
+    id: 'st03',
+    name: 'FamilyStore Thamrin City',
+    isOpen: true,
+    distance: '2.5 km',
+    address: 'Jl. Thamrin Boulevard No. 3, Jakarta Pusat',
+    hours: '07:00 – 22:00',
+  },
+  {
+    id: 'st04',
+    name: 'FamilyStore Cempaka Putih',
+    isOpen: false,
+    distance: '3.1 km',
+    address: 'Jl. Cempaka Putih Tengah No. 21, Jakarta Pusat',
+    hours: '06:00 – 21:00',
+  },
+  {
+    id: 'st05',
+    name: 'FamilyStore Bintaro Xchange',
+    isOpen: true,
+    distance: '5.6 km',
+    address: 'Jl. Bintaro Utama 3 No. 9, Tangsel',
+    hours: '24 Hours',
+  },
+]
