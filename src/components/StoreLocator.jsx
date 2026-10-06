@@ -13,15 +13,15 @@ import { stores } from '../data/stores.js'
 function StoreCard({ store }) {
   return (
     <article
-      className={`flex flex-col gap-4 rounded-3xl border p-5 transition sm:flex-row sm:items-center sm:justify-between ${
+      className={`flex flex-col gap-4 rounded-2xl border p-5 transition sm:flex-row sm:items-center sm:justify-between ${
         store.isOpen
-          ? 'border-ink-200 bg-white hover:border-brand-300 hover:shadow-lg hover:shadow-ink-900/5'
-          : 'border-dashed border-ink-200 bg-ink-50/60'
+          ? 'border-ink-200 bg-white shadow-sm hover:border-brand-300 hover:shadow-md'
+          : 'border-dashed border-ink-200 bg-white/60'
       }`}
     >
       <div className="flex items-start gap-3.5">
         <span
-          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl ${
+          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${
             store.isOpen
               ? 'bg-brand-50 text-brand-600'
               : 'bg-ink-100 text-ink-400'
@@ -35,12 +35,12 @@ function StoreCard({ store }) {
               {store.name}
             </h3>
             {store.isOpen ? (
-              <span className="inline-flex items-center gap-1 rounded-full bg-brand-50 px-2 py-0.5 font-mono text-[10px] font-bold text-brand-700">
+              <span className="inline-flex items-center gap-1 rounded-md bg-brand-50 px-2 py-0.5 text-[10px] font-bold text-brand-700">
                 <CheckCircle2 size={11} />
-                Open Now
+                Open now
               </span>
             ) : (
-              <span className="inline-flex items-center gap-1 rounded-full bg-ink-100 px-2 py-0.5 font-mono text-[10px] font-bold text-ink-500">
+              <span className="inline-flex items-center gap-1 rounded-md bg-ink-100 px-2 py-0.5 text-[10px] font-bold text-ink-500">
                 <XCircle size={11} />
                 Closed
               </span>
@@ -67,9 +67,9 @@ function StoreCard({ store }) {
         <button
           type="button"
           disabled={!store.isOpen}
-          className={`inline-flex flex-1 items-center justify-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold transition sm:flex-none ${
+          className={`inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg px-4 py-2 text-xs font-bold transition sm:flex-none ${
             store.isOpen
-              ? 'bg-brand-600 text-white shadow-md shadow-brand-600/25 hover:bg-brand-700 active:scale-95'
+              ? 'bg-brand-600 text-white hover:bg-brand-700 active:scale-95'
               : 'cursor-not-allowed bg-ink-100 text-ink-400'
           }`}
         >
@@ -78,7 +78,7 @@ function StoreCard({ store }) {
         </button>
         <a
           href="tel:+622150000000"
-          className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-full border border-ink-200 bg-white px-4 py-2 text-xs font-bold text-ink-700 transition hover:border-brand-300 hover:text-brand-700 sm:flex-none"
+          className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-ink-200 bg-white px-4 py-2 text-xs font-bold text-ink-700 transition hover:border-brand-300 hover:text-brand-700 sm:flex-none"
         >
           <Phone size={13} />
           Call
@@ -94,17 +94,18 @@ export default function StoreLocator() {
   const openCount = stores.filter((store) => store.isOpen).length
 
   return (
-    <section id="stores" className="bg-white py-14 sm:py-20">
+    <section id="stores" className="bg-wave-50 py-14 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex flex-col gap-2 text-center">
-          <span className="font-mono text-xs font-bold tracking-widest text-brand-600 uppercase">
+          <span className="text-xs font-bold tracking-widest text-brand-600">
             Store Locator
           </span>
           <h2 className="text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">
             {openCount} of {stores.length} stores open near you
           </h2>
           <p className="mx-auto max-w-lg text-sm text-ink-500 sm:text-base">
-            Walk in, scan, and grab your order from the express pickup shelf.
+            Visit a store for fresh eats, or order ahead in the mobile app for
+            delivery and pickup.
           </p>
         </div>
 
@@ -113,7 +114,7 @@ export default function StoreLocator() {
             type="button"
             onClick={() => setOnlyOpen((value) => !value)}
             aria-pressed={onlyOpen}
-            className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-bold transition sm:text-sm ${
+            className={`inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-xs font-bold transition sm:text-sm ${
               onlyOpen
                 ? 'border-brand-600 bg-brand-50 text-brand-700'
                 : 'border-ink-200 bg-white text-ink-500 hover:border-brand-300'

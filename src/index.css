@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
 
   --color-brand-50: #ecfdf3;
   --color-brand-100: #d1fadf;
@@ -15,10 +14,19 @@
   --color-brand-800: #027a48;
   --color-brand-900: #05603a;
 
+  --color-wave-50: #f1f8ff;
+  --color-wave-100: #e0f0fe;
+  --color-wave-200: #b9e4fd;
+  --color-wave-500: #0087d0;
+  --color-wave-600: #0079c2;
+  --color-wave-700: #006ba8;
+
   --color-ember-50: #fff4ed;
   --color-ember-100: #ffe6d5;
   --color-ember-500: #f97316;
   --color-ember-600: #ea580c;
+
+  --color-cream: #f4c790;
 
   --color-ink-50: #f7f8fa;
   --color-ink-100: #eef0f3;
@@ -47,7 +55,7 @@ html {
 }
 
 body {
-  @apply bg-ink-50 text-ink-900 font-sans antialiased;
+  @apply bg-white text-ink-900 font-sans antialiased;
 }
 
 .no-scrollbar {
@@ -55,34 +63,4 @@ body {
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none;
-}
-
-@keyframes modal-in {
-  from {
-    opacity: 0;
-    transform: translateY(16px) scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes toast-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-.animate-modal-in {
-  animation: modal-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-.animate-toast-in {
-  animation: toast-in 0.25s ease-out both;
 }

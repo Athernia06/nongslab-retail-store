@@ -1,0 +1,9 @@
+{
+  "name": "lint",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "lint": "lint.js"
+  }
+}

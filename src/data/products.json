@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-10-06T16:20:00.000Z",
+  "source": "familymart-indonesia-menu-board",
+  "categories": [
+    {
+      "id": "famicafe-coffee",
+      "label": "FamiCafe - Coffee",
+      "items": [
+        { "name": "Americano", "price": 13000 },
+        { "name": "Kopi Susu Keluarga", "price": 16000 },
+        { "name": "Coffee Jelly Latte", "price": 16000 },
+        { "name": "Caramel Macchiato", "price": 16000 },
+        { "name": "Dolce Latte", "price": 16000 },
+        { "name": "Cafe Latte", "price": 16000 },
+        { "name": "Cappuccino", "price": 16000 },
+        { "name": "Vanilla Latte", "price": 16000 },
+        { "name": "Creamy Hazelnut Latte", "price": 16000 }
+      ]
+    },
+    {
+      "id": "famicafe-specialities",
+      "label": "FamiCafe - Specialities",
+      "items": [
+        { "name": "Tea (Ice/Hot)", "price": 8000 },
+        { "name": "Ice Yakult Series (Lemon/Lychee/Green Tea)", "price": 14000 },
+        { "name": "Premium Chocolate", "price": 16000 },
+        { "name": "Green Tea Latte", "price": 16000 },
+        { "name": "Honey Yuzu", "price": 16000 },
+        { "name": "Brown Sugar Fresh Milk / Milk Tea", "price": 18000 },
+        { "name": "Peppermint Chocolate", "price": 18000 },
+        { "name": "Es Cendol", "price": 18000 }
+      ]
+    },
+    {
+      "id": "fami-ice",
+      "label": "Fami Ice",
+      "items": [
+        { "name": "Fami Ice Cone / Cup", "price": 9000 },
+        { "name": "Fami Ice Espresso", "price": 11000 },
+        { "name": "Sundae (Double Choco / Brown Sugar Boba)", "price": 15000 }
+      ]
+    },
+    {
+      "id": "crispy-chicken-paket-nasi",
+      "label": "Crispy Chicken - Paket Nasi",
+      "items": [
+        { "name": "Paket A (Nasi + Paha Bawah/Sayap)", "price": 12000 },
+        { "name": "Paket B (Nasi + Paha Atas/Dada)", "price": 14000 },
+        { "name": "Paket Combo Hemat A (Nasi + Paha Bawah/Sayap + Ice Tea)", "price": 15000 },
+        { "name": "Paket Combo Hemat B (Nasi + Paha Atas/Dada + Ice Tea)", "price": 17000 },
+        { "name": "Paket Duo Hemat", "price": 23000 },
+        { "name": "Nasi Crispy Chicken Sambal Ijo + Mie", "price": 17000 },
+        { "name": "Nasi Crispy Chicken Sambal Cobek + Mie", "price": 17000 },
+        { "name": "Nasi Uduk Crispy Chicken Sambal Kecombrang", "price": 19000 },
+        { "name": "Nasi Crispy Chicken Gulai", "price": 17000 }
+      ]
+    },
+    {
+      "id": "chicken-karaage-boneless",
+      "label": "Chicken Karaage & Boneless",
+      "items": [
+        { "name": "Chicken Karaage Ala Carte 3 pcs", "price": 14000 },
+        { "name": "Chicken Karaage + Nasi (Spicy Mayo/Sambal Geprek/Smoky BBQ)", "price": 17000 },
+        { "name": "Boneless Crispy Chicken Ala Carte", "price": 14000 },
+        { "name": "Boneless Crispy Chicken + Nasi (Sambal Korek/Matah)", "price": 18000 }
+      ]
+    },
+    {
+      "id": "korean-buldak",
+      "label": "Korean Buldak",
+      "items": [
+        { "name": "Crispy Chicken Korean Buldak", "price": 14000 },
+        { "name": "Nasi Crispy Chicken Korean Buldak", "price": 17000 },
+        { "name": "Nasi Crispy Chicken Buldak (Cheese/Honey Mustard)", "price": 19000 }
+      ]
+    },
+    {
+      "id": "snacks-siomay-pao",
+      "label": "Snacks, Siomay & Pao",
+      "items": [
+        { "name": "Sosis Guling Guling (Chili Mayo/BBQ/Cheese/Honey Mustard)", "price": 11000 },
+        { "name": "Korean Corn / Noodle (Sausage / Mozza)", "price": 18000 },
+        { "name": "Siomay (Ikan / Udang / Mercon / Keju)", "price": 6000 },
+        { "name": "Pao Kecil", "price": 6000 },
+        { "name": "Pao Besar (Ayam Kecap / Coklat)", "price": 8000 }
+      ]
+    },
+    {
+      "id": "chicken-burger",
+      "label": "Chicken Burger",
+      "items": [
+        { "name": "Chicken Burger Signature", "price": 19000 },
+        { "name": "Chicken Burger Cheese", "price": 19000 },
+        { "name": "Chicken Burger Spicy", "price": 19000 }
+      ]
+    }
+  ]
+}

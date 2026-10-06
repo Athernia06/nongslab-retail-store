@@ -53,7 +53,7 @@ const LINK_GROUPS = [
 
 export default function Footer() {
   return (
-    <footer id="about" className="bg-ink-900 text-ink-200">
+    <footer id="about" className="border-t border-ink-100 bg-white text-ink-600">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.3fr_2fr]">
         <div>
           <a href="#" className="flex items-center gap-2.5">
@@ -63,17 +63,17 @@ export default function Footer() {
               </svg>
             </span>
             <span className="text-left leading-tight">
-              <span className="block text-base font-extrabold text-white">
+              <span className="block text-base font-extrabold text-ink-900">
                 FamilyStore
               </span>
-              <span className="block text-[10px] font-mono font-bold tracking-widest text-brand-300 uppercase">
+              <span className="block text-[10px] font-bold tracking-widest text-brand-600">
                 Retail Demo
               </span>
             </span>
           </a>
-          <p className="mt-4 max-w-xs text-sm text-ink-400">
+          <p className="mt-4 max-w-xs text-sm text-ink-500">
             A demo convenience-store experience — fresh ready-to-eat, hot
-            coffee, and express self-pickup, built mobile-first.
+            coffee, and ice cream, with ordering in the mobile app.
           </p>
           <div className="mt-5 flex gap-2.5">
             {SOCIALS.map(({ label, href, path }) => (
@@ -83,7 +83,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={label}
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-ink-300 transition hover:bg-brand-600 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-lg bg-ink-50 text-ink-500 transition hover:bg-brand-600 hover:text-white"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
                   <path d={path} />
@@ -96,7 +96,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
           {LINK_GROUPS.map((group) => (
             <nav key={group.heading} aria-label={group.heading}>
-              <h3 className="text-xs font-bold tracking-widest text-white uppercase">
+              <h3 className="text-xs font-bold tracking-widest text-ink-900">
                 {group.heading}
               </h3>
               <ul className="mt-4 space-y-2.5">
@@ -104,7 +104,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-sm text-ink-400 transition hover:text-brand-300"
+                      className="text-sm text-ink-500 transition hover:text-brand-700"
                     >
                       {link.label}
                     </a>
@@ -116,19 +116,17 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
+      <div className="border-t border-ink-100">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-5 sm:flex-row sm:justify-between sm:px-6">
-          <p className="text-xs text-ink-400">
+          <p className="text-xs text-ink-500">
             © {new Date().getFullYear()} FamilyStore / Retail Demo. All rights
             reserved.
           </p>
-          <p className="inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-3.5 py-1.5">
-            <span className="h-2 w-2 rounded-full bg-brand-400" />
-            <span className="text-xs font-semibold text-brand-300">
-              Built by{' '}
-              <span className="font-bold text-brand-200">
-                Nongslab Digital Studio
-              </span>
+          <p className="inline-flex items-center gap-2 text-xs text-ink-500">
+            <span className="h-2 w-2 rounded-full bg-brand-500" />
+            Built by{' '}
+            <span className="font-bold text-brand-700">
+              Nongslab Digital Studio
             </span>
           </p>
         </div>
